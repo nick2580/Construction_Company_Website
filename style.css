@@ -1,0 +1,99 @@
+body {
+    background-color:#F8F9FA;
+    font-family: 'Open Sans', sans-serif;
+    color: #514B64;
+    min-height: 100vh;
+}
+  
+code {
+    background: #fff;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    margin: 0 0.3rem;
+}
+
+#company {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #4654A3;
+} 
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: #4654A3;
+    color: mintcream;
+    border-radius: 5px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline-color: #4654A3;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header .carousel-control-next-icon:hover {
+    color: #4654A3;
+}
+
+.fa-angle-left, .fa-angle-right {
+    color: mintcream;
+    font-size: 35px;
+}
+
+.fa-angle-left:focus, .fa-angle-right:focus, 
+.fa-angle-left:active, .fa-angle-right:active,
+.fa-angle-left:hover, .fa-angle-right:hover {
+    color: #4654A3;
+    font-size: 50px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+#drop-down-button {
+    color: #4654A3;
+}
+
+#drop-down-button:hover {
+    color: #4654A3;
+    font-size: 18px;
+}
+
+.chat-float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
