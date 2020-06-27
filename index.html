@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://kit.fontawesome.com/82eaa17ff8.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/logo-favicon.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="style.css">
@@ -29,7 +32,8 @@
     <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto" id="menu">
         <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#aboutus" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#clients" class="nav-link">Client</a></li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
                 Services <i id="drop-down-button" class="fas fa-chevron-circle-down"></i>
@@ -41,7 +45,7 @@
                 <a class="dropdown-item" href="#">Building Construction</a>
                 <a class="dropdown-item" href="#">Flooring Solution</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">More</a>
+                <a class="dropdown-item" href="#service-area">More</a>
                 </div>
             </li>
         <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
@@ -50,33 +54,33 @@
     </div>
     </div>
 </nav>
+<!--End of Navigation Bar-->
+
+<!--Slider Starts from here-->
 <header>
-    <div id="sliders" class="carousel slide" data-ride="carousel">
+    <div id="sliders" class="carousel slide caption-animated" data-ride="carousel" data-pause="hover" data-interval="5000">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url(images/white-walker.jpg)">
+        <!-- Slide One - Home Renovation -->
+        <div class="carousel-item active" style="background-image: linear-gradient( to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)), url(images/slider-01.jpg)">
         <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">First Slide</h2>
-            <p class="lead">This is a description for the first slide.</p>
+            <h2 class="display-4">Home Renovation</h2>
         </div>
         </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(images/background.jpg)">
+        <!-- Slide Two - Bungalow Construction -->
+        <div class="carousel-item" style="background-image: linear-gradient( to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)), url(images/slider-02.jpg)">
         <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Second Slide</h2>
-            <p class="lead">This is a description for the second slide.</p>
+            <h2 class="display-4">Bungalow Construction</h2>
         </div>
         </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(images/dirt.png)">
+        <!-- Slide Three - Repair and Maintainence -->
+        <div class="carousel-item" style="background-image: linear-gradient( to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)), url(images/slider-03.jpg)">
         <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Third Slide</h2>
-            <p class="lead">This is a description for the third slide.</p>
+            <h2 class="display-4">Repair and Maintainence</h2>
         </div>
         </div>
     </div>
@@ -90,9 +94,178 @@
         </a>
     </div>
 </header>
+<!--End of Slider Windows-->
+
+<!--Start of Services-->
+<div class="container" id="service-container">
+    <center>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p class="subtitle" style="color: #4654A3;" id="service-area">WHAT WE DO</p>
+                <h2 class="section-title" >OUR SERVICE AREA</h2>
+                <div class="divider-1"><div class="line"></div></div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-warehouse icon-lg icon-green icon-bg-green icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Industrial Sheds Construction</h4>
+                        <p>We Provide best in class Industry Sheds and warehouses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-drafting-compass icon-lg icon-yellow icon-bg-yellow icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Industrial Maintainence</h4>
+                        <p>We provide all kinds of maintainence services for different companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-hammer icon-lg icon-red icon-bg-red icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Fence Construction</h4>
+                        <p>We are expert in making all kinds of fence structure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-ruler-combined icon-lg icon-cyan icon-bg-cyan icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Flooring Solutions</h4>
+                        <p>Industrial Grade flooring with superior material quality and precise craftmenship</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-hard-hat icon-lg icon-red icon-bg-red icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Repair and Maintainence</h4>
+                        <p>We provide Recurring maintainence as well as repairs to our clients</p>
+                    </div>
+                </div>                           
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-paint-roller icon-lg icon-green icon-bg-green icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Home Renovation</h4>
+                        <p>We provide complete renovation solutions for your house or apartment including Painting and Waterproofing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-home icon-lg icon-orange icon-bg-orange icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Bungalow Construction</h4>
+                        <p>Various kind Bunglow costruction is carried out by us</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-tint-slash icon-lg icon-blue icon-bg-blue icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Waterproofing</h4>
+                        <p>We Provide best in class Waterproofing solution to industries and homes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <div class="divider-2"><div class="line"></div></div>   
+
+    </center>
+    <br>
+    <div class="col-lg-12 text-center">
+        <p class="subtitle" style="color: #4654A3;" id="clients">CLIENTS</p>
+        <h2 class="section-title" >OUR CLIENTS</h2>
+        <div class="divider-1"><div class="line"></div></div>
+    <section class="customer-logos slider">
+        <div class="slide">
+            <img src="images/vip-logo.png">
+        </div>
+        <div class="slide">
+            <img src="images/nima-logo.png">
+        </div>
+        <div class="slide">
+            <img src="images/shaan-logo.png">
+        </div>
+        <div class="slide">
+            <img src="images/ccr-logo.png">
+        </div>
+        <div class="slide">
+            <img src="images/cupid-logo.png">
+        </div>
+        <div class="slide">
+            <img src="images/gargoti-logo.png">
+        </div>
+        <div class="slide">
+            <img src="images/l&t-logo.png">
+        </div>
+      </section>
+    </div>
+    <br><br><br>
+        <div class="divider-2"><div class="line"></div></div>   
+    <br>
+
+    
+    <div class="col-lg-12 text-center">
+        <p class="subtitle" style="color: #4654A3;" id="aboutus">WHY CHOOSE US</p>
+            <h2 class="section-title" >ABOUT US</h2>
+                <div class="divider-1"><div class="line"></div></div>
+        <div class="py-6">
+            <div class="container py-6">
+              <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-2 order-lg-1">
+                  <h2 class="font-weight-light">More than 25 year experience in construction industry</h2>
+                  <p class="font-italic text-muted mb-4"> <strong style="color: #4654A3;">Yadav Civil Contractors</strong> strive to give our clients the best of construction services. Making a house of their own is a dream and we are here to realize your dream for you.</p><a href="#aboutus" class="btn btn-light px-5 rounded-pill shadow rounded-xs">  <strong>Learn More</strong> </a>
+                </div>
+                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="https://img.icons8.com/cotton/128/4654A3/growth-and-flag.png"/></div>
+            </div>
+
+            <div class="row align-items-left">
+                <div class="col-lg-6">
+                    <img src="https://img.icons8.com/cotton/64/4654A3/construction-plan.png"/>
+                  <h2 class="font-weight-light">Architecture Design</h2>
+                  <p class="font-italic text-muted mb-4">The best designs for your house and buildings.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://img.icons8.com/cotton/64/4654A3/waggon-truck.png"/>
+                  <h2 class="font-weight-light">Building Construction</h2>
+                  <p class="font-italic text-muted mb-4">We use best quality materials to build your dream home.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://img.icons8.com/dusk/64/4654A3/customer-insight.png"/>
+                  <h2 class="font-weight-light">10,000+ Satisfied Customers</h2>
+                  <p class="font-italic text-muted mb-4">Customer Satisfaction is our main motto.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://img.icons8.com/ultraviolet/64/4654A3/group-task.png"/>
+                    <h2 class="font-weight-light">Team Work</h2>
+                    <p class="font-italic text-muted mb-4">People are our real assets</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>  
+    <div class="divider-2"><div class="line"></div></div>      
+
+    <div class="col-lg-12 text-center">
+        <p class="subtitle" style="color: #4654A3;" id="aboutus">WHAT PEOPLE SAY</p>
+        <h2 class="section-title" >TESTIMONIAL</h2> <div class="divider-1"><div class="line"></div></div>
+
+
+
+       
+
+        
+
+ 
+
+    
+
 <a href="https://wa.link/1rhd1m" class="chat-float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
     </a>
-  <script src="app.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
