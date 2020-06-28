@@ -29,4 +29,18 @@ $(document).ready(function(){
             }
         }]
     });
+});
+
+
+$(document).ready(function(){
+    $("#OpenForm").click(function(){
+        $(".quotation_form_area").animate({
+            width: "toggle"
+        });
     });
+});
+
+
+
+
+
