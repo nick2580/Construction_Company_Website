@@ -18,6 +18,9 @@ html, .main-container {
 .navbar-toggler-icon:focus {
     outline-color: #4654A3;
 }
+header h2{
+    color: mintcream;
+}
 
 .carousel-item {
     height: 100vh;
@@ -136,8 +139,11 @@ html, .main-container {
     height: 350px;
     width: 260px;
 }
+.card h4 {
+    color: black;
+}
 
-.card:hover, .card:focus, .card:hover p{
+.card:hover, .card:focus, .card:hover p, .card:hover h4{
     z-index: 25;
     background-color: #4654A3;
     cursor: pointer;
@@ -420,6 +426,11 @@ h2{
 .divider-2 { padding: 25px 0 15px 0; align-items: center; top: 2;}
 .divider-2 .line { width: 100%; margin: 0 auto; border-bottom: 1.15px solid #ddd; }
 
+.divider-3 { padding: 5px 0 5px 0; align-items: center; top: 2;}
+.divider-3 .line { width: 20%; margin: 0 auto; border-bottom: 1.15px solid #4654A3; }
+
+.divider-4 { padding: 5px 0 5px 0; align-items: center; top: 1;}
+.divider-4 .line { width: 35%; margin: 0 auto; border-bottom: 1.15px solid #ddd; }
 
 
 #myCarousel {
@@ -629,11 +640,78 @@ footer p {
 }
 
 .main-container h2 {
-    color: #4654A3;
+    color: black;
     font-size: 500;
 }
 
+/*About us history list style */
 
+.py-6 li {
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+}
+
+#team-row img {
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    width: 500;
+    height: 150;
+}
+.container-service h1 {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 120px; 
+    text-align: center;
+}
+
+.container-enquiry {
+    display: none;
+}
+
+#interested-btn {
+    color: #fff;
+    margin:auto;
+    display:block;
+    width: 100px;
+    border-radius:5px;
+    background-color: #4654A3;
+    border-radius:5px;
+}
+
+#interested-btn:hover {
+    box-shadow: 1px 1px 6px 2px grey;
+}
+
+.container-enquiry input{
+    width: 300px;
+}
+#firstname, #lastname {
+
+    width: 300px;
+}
+
+.browser-default{
+    width: 300px;
+}
+#message {
+    width: 300px;
+}
+
+#submit {
+    color: #fff;
+    width: 300px;
+    border-radius:5px;
+    background-color: #4654A3;
+    border-radius:5px;
+}
+
+#submit:hover {
+    box-shadow: 1px 1px 6px 2px grey;   
+
+}
+
+.container-enquiry {
+ 
+}
 
 
 

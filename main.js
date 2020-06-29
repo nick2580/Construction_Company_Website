@@ -1,13 +1,4 @@
-/*document.getElementsByClassName('card').addEventListener('mouseover', function(this){
-    this.style.width = '300px';
-    this.style.height = '390px';
-});
-
-document.getElementById('prevbn').addEventListener('mouseout', function(){
-    document.getElementsByClassName('fa-angle-left').style.color = 'mintcream';
-})
-*/
-
+//Client Logo Slider
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 6,
@@ -31,7 +22,7 @@ $(document).ready(function(){
     });
 });
 
-
+//Quotation Function
 $(document).ready(function(){
     $("#OpenForm").click(function(){
         $(".quotation_form_area").animate({
@@ -39,8 +30,26 @@ $(document).ready(function(){
         });
     });
 });
-
-
-
-
-
+//show enquiry tab
+$(document).ready(function(){
+    $("#interested-btn").click(function(){
+        $(".container-enquiry").css("display", "block");      
+    });
+});
+//scroll to enquiry tab
+$(document).ready(function(){
+    $("#interested-btn").click(function(){
+        $("html, body").animate({
+            scrollTop: $(".container-enquiry").offset().top
+        }, 'slow');
+    });
+});
+//scroll back up and alert user with response
+$(document).ready(function(){
+    $('#submit').click(function(){
+        $("html, body").animate({
+            scrollTop: $(".main-container").offset().top
+        });
+        alert("Your Response was accepted. We will contact you soon");
+    });
+});
