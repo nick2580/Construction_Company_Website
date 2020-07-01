@@ -657,7 +657,7 @@ footer p {
     width: 500;
     height: 150;
 }
-.container-service h1 {
+.container-service h1, .container-contact h1, .container-client h1{
     font-family: 'Open Sans', sans-serif;
     padding-top: 120px; 
     text-align: center;
@@ -681,7 +681,7 @@ footer p {
     box-shadow: 1px 1px 6px 2px grey;
 }
 
-.container-enquiry input{
+.container-enquiry input, .container-contact-form input{
     width: 300px;
 }
 #firstname, #lastname {
@@ -709,6 +709,9 @@ footer p {
 
 }
 
+.testimonial-list li {
+    display: inline;
+}
 
 
 

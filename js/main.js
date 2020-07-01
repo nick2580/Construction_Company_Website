@@ -22,6 +22,33 @@ $(document).ready(function(){
     });
 });
 
+//Client Logo Slider
+$(document).ready(function(){
+    $('.testimonial-slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+
+
+
+
 //Quotation Function
 $(document).ready(function(){
     $("#OpenForm").click(function(){
